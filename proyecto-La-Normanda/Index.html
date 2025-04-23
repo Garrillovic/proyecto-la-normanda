@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Normanda, C.A.</title>
+    <!-- Enlazamos el archivo CSS que contiene los estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado de la página -->
+    <header>
+        <!-- Logo de la empresa -->
+        <img src="Imagenes/Logo Original de la Normanda Pagina Web.png" alt="Logo La Normanda" class="logo">
+        
+        <!-- Barra de navegación -->
+        <nav>
+            <!-- Enlace a la sección de "Inicio", desplazamiento suave -->
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nuestra-empresa">Nuestra Empresa</a></li>
+                <li><a href="#productos">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Inicio con el carrusel de imágenes y el eslogan -->
+    <section id="inicio" class="inicio">
+        <div class="overlay">
+            <!-- Eslogan principal -->
+            <h1>Sabor que nutre, calidad que inspira.</h1>
+            <p>Especialistas en productos grasos de alta calidad: margarina, manteca y más.</p>
+        </div>
+    </section>
+
+    <!-- Sección Nuestra Empresa -->
+    <section id="nuestra-empresa" class="nuestra-empresa">
+        <!-- Primera parte: Imagen a la izquierda, texto a la derecha -->
+        <div class="empresa-bloque fade-in">
+            <div class="empresa-imagen">
+                <img src="Imagenes/Fabrica.jpeg" alt="Imagen de la empresa">
+            </div>
+            <div class="empresa-texto">
+                <p>
+                    <strong>Somos una empresa familiar</strong> con profundas raíces regionales, que combina la tradición con un enfoque moderno y un compromiso constante con la mejora continua. Nuestra flexibilidad nos permite adaptarnos a los cambios del mercado, mientras que nuestra alta profesionalización garantiza un servicio de excelencia. Valoramos el desarrollo integral de nuestros recursos humanos, fomentando tanto su crecimiento profesional como personal. Formamos equipos de trabajo altamente capacitados, autoexigentes y orientados al cliente, enfocados en alcanzar resultados de calidad, con una mentalidad estratégica y una actitud proactiva hacia el aprendizaje.
+                </p>
+            </div>
+        </div>
+
+        <!-- Segunda parte: Texto a la izquierda, imagen a la derecha -->
+        <div class="empresa-bloque invertido fade-in">
+            <div class="empresa-imagen">
+                <img src="Imagenes/Imagen1.png" alt="Nuestra Visión y Misión">
+            </div>
+            <div class="empresa-texto">
+                <p>
+                    <strong>Nuestra Misión</strong> es dedicarnos a producir, importar, industrializar, comercializar y distribuir alimentos de alta calidad, tanto al por mayor como al por menor, a precios accesibles. Nuestro objetivo es satisfacer las necesidades nutricionales de las familias venezolanas, ofreciendo productos que no solo cumplen con los estándares de calidad, sino que también generan un alto nivel de satisfacción entre nuestros consumidores.
+                </p>
+                <p>
+                    <strong>Nuestra Visión</strong> es ser una empresa líder y reconocida en el mercado nacional de alimentos, destacando por la calidad excepcional de nuestros productos y nuestro firme compromiso social con los consumidores. Aspiramos a ser el proveedor preferido de productos alimenticios, impulsados por la innovación tecnológica que aplicamos en nuestros productos y por la identidad única de nuestras marcas propias.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Productos -->
+    <section id="productos" class="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="Imagenes/Margarina.png" alt="Producto 1" class="lightbox-trigger">
+            </div>
+            <div class="producto">
+                <img src="Imagenes/Margarina Ligera.png" alt="Producto 2" class="lightbox-trigger">
+            </div>
+            <div class="producto">
+                <img src="Imagenes/Margarina Repostera.png" alt="Producto 3" class="lightbox-trigger">
+            </div>
+            <div class="producto">
+                <img src="Imagenes/Manteca Industrial.png" alt="Producto 4" class="lightbox-trigger">
+            </div>
+        </div>
+    
+        <!-- Lightbox (se activa al hacer clic en una imagen) -->
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+        </div>
+    </section>
+
+    
+    <!-- Contenedor de los iconos flotantes -->
+    <div class="iconos-flotantes">
+        <a href="https://www.instagram.com/alimentoslanormanda" target="_blank">
+            <img src="imagenes/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://wa.me/+584126676268" target="_blank">
+            <img src="imagenes/whatsapp.png" alt="WhatsApp">
+        </a>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p class="legal">© 2025 La Normanda, C.A. | Todos los derechos reservados.</p>
+    </footer>
+
+
+    <!-- Enlace al archivo JavaScript que controla el carrusel de imágenes -->
+    <script src="script.js"></script>
+
+</body>
+</html>

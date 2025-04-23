@@ -1,0 +1,288 @@
+/* Establecemos un desplazamiento suave al hacer clic en los enlaces */
+html {
+    scroll-behavior: smooth; /* Hace que el desplazamiento a las secciones sea suave */
+}
+
+/* Reset de márgenes y paddings para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y margin no afecten el tamaño */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: black; /* Fondo negro para el encabezado */
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    justify-content: space-between; /* Distribuye los elementos: logo a la izquierda, links a la derecha */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 15px 20px; /* Espaciado interno */
+}
+
+/* Estilos para el logo */
+.logo {
+    width: 140px; /* Define el tamaño del logo */
+}
+
+/* Alinear el menú en una sola línea y alinear los elementos */
+/* Alinear el menú en una sola línea y moverlo a la derecha */
+nav ul {
+    list-style: none; /* Quita los estilos de lista (puntos) */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Mantiene los enlaces en una sola línea */
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: flex-end; /* Mueve los enlaces a la derecha */
+}
+
+/* Espaciado entre los enlaces del menú */
+nav ul li {
+    margin-left: 20px; /* Agrega espacio entre los enlaces */
+}
+
+/* Estilos para los enlaces del menú */
+nav ul li a {
+    color: #fff; /* Color blanco para los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    font-size: 16px; /* Tamaño del texto */
+    transition: color 0.3s ease-in-out; /* Agrega una transición suave al color */
+}
+
+/* Efecto hover en los enlaces */
+nav ul li a:hover {
+    color: red; /* Cambia el color a rojo al pasar el cursor */
+}
+
+/* Reset de márgenes y paddings para todos los elementos */
+* {
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina paddings predeterminados */
+    box-sizing: border-box; /* Asegura que el padding y margin no afecten el tamaño */
+}
+
+/* Estilos para la sección de Inicio con el carrusel */
+.inicio {
+    width: 100%;
+    height: 80vh; /* Ahora ocupa el 80% de la altura de la pantalla */
+    background-size: cover; /* La imagen de fondo se ajusta para cubrir toda la sección */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    transition: background-image 1s ease-in-out; /* Transición suave al cambiar la imagen */
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    position: relative; /* Permite colocar otros elementos de manera relativa */
+}
+
+/* Capa sobre la imagen de fondo */
+.overlay {
+    background-color: transparent; /* Hace que el fondo sea transparente */
+    color: white; /* Texto en color blanco */
+    text-align: center; /* Centra el texto */
+    padding: 0; /* Elimina el padding */
+    margin: 0; /* Elimina los márgenes */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos del eslogan */
+.overlay h1 {
+    font-size: 36px; /* Tamaño grande para el eslogan */
+    margin: 0; /* Elimina el margen superior e inferior del eslogan */
+    padding: 0; /* Elimina cualquier padding dentro del eslogan */
+}
+
+.overlay p {
+    font-size: 20px; /* Tamaño de letra para la descripción */
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina paddings */
+}
+/* Sección Nuestra Empresa */
+.nuestra-empresa {
+    width: 100%;
+    padding: 50px 10%;
+    background-color: #f8f8f8; /* Fondo claro */
+}
+
+/* Contenedor de cada bloque */
+.empresa-bloque {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+/* Tamaño fijo para todas las imágenes */
+.empresa-imagen {
+    width: 40%; /* Asegura que todas las imágenes tengan el mismo ancho */
+    height: 300px; /* Altura fija */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.empresa-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene proporciones y recorta el exceso */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto de escala en las imágenes */
+.empresa-imagen img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para el texto */
+.empresa-texto {
+    width: 55%;
+    font-size: 18px;
+    color: #333;
+    text-align: justify;
+}
+
+/* Invertir orden: imagen a la izquierda, texto a la derecha */
+.empresa-bloque {
+    flex-direction: row-reverse;
+}
+
+/* Segunda parte: imagen a la derecha, texto a la izquierda */
+.empresa-bloque.invertido {
+    flex-direction: row;
+}
+
+/* Efecto fade-in (desvanecimiento) */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Activar efecto cuando el usuario las vea */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Sección Productos con fondo oscuro */
+.productos {
+    text-align: center;
+    padding: 50px 10%;
+    background-color: #222; /* Fondo oscuro */
+    color: #fff;
+}
+
+/* Grid 2x2 para las imágenes */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ajustar imágenes sin recortarlas */
+.producto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333; /* Fondo ligeramente más claro para contraste */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.producto img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción original */
+    max-height: 400px; /* Controla el tamaño sin recortar */
+    object-fit: contain; /* Asegura que la imagen completa se vea */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    background-color: transparent; /* Elimina fondo blanco */
+}
+
+/* Efecto hover */
+.producto img:hover {
+    transform: scale(1.05);
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox-content {
+    max-width: 85%;
+    max-height: 85%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 45px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsivo: en pantallas pequeñas, cambia a una sola columna */
+@media (max-width: 768px) {
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Estilos para el contenedor de iconos flotantes */
+.iconos-flotantes {
+    position: fixed;
+    right: 20px; /* Alineados a la derecha */
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los iconos */
+    z-index: 1000;
+}
+
+/* Ajuste de tamaño y efectos de los iconos */
+.iconos-flotantes a img {
+    width: 50px; /* Tamaño equilibrado */
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto hover: aumenta el tamaño al pasar el mouse */
+.iconos-flotantes a img:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos mejorados para el pie de página */
+.footer {
+    background-color: #111; /* Fondo oscuro */
+    color: #fff; /* Texto en color blanco */
+    text-align: center; /* Centrar contenido */
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+}
+
+/* Texto legal del pie de página */
+.legal {
+    margin: 0 auto;
+    max-width: 80%; /* Evita que el texto sea demasiado ancho */
+    opacity: 0.9;
+}
